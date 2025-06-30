@@ -1,0 +1,169 @@
+/*Import link for the Poppins font from fonts.google.com*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*POPPINS CLASSES*/
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*HEADERS*/
+h1{
+    font-family: "Poppins", sans-serif; /*Font from fonts.google.com*/
+    font-size: 80px;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+h2, h3, h4{
+    font-family: "Poppins", sans-serif; /*Font from fonts.google.com*/
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 80, 67);
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: rgb(247, 177, 188);
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;;
+}
+
+/*PARAGRAPHS*/
+p{
+    font-family: "Poppins", sans-serif; /*Font from fonts.google.com*/
+    font-weight: 200;
+    font-style: normal;
+    color: rgb(0, 80, 67);
+    text-align: center;
+}
+
+
+input[type="submit"]{
+    background-color: rgb(1, 128, 106);
+    border: none; 
+    border-radius: 35px;
+    font-family: "Poppins", sans-serif; /*Font from fonts.google.com*/
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 25px;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    float: right; /*Positions the submit button to the bottom right of the form*/
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(247, 177, 188);
+}
