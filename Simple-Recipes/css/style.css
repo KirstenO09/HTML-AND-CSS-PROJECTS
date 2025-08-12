@@ -484,7 +484,7 @@ input[type="submit"]:hover{
 }
 
 .row{
-    display: flex;
+    display: flex; 
     justify-content: center;
 }
 

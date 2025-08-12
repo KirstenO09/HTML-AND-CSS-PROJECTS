@@ -1,114 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Coffee Shop</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta name="description" content="The Coffee Shop Homepage">
-         <link rel="stylesheet" href="one_page_website.css">
-    </head>
-    <body>
-        <!--NAVBAR-->
-        <nav>
-            <ul>
-                <li><a href="#cappucino">Cappucino</a></li>
-                <li><a href="#latte">Latte</a></li>
-                <li><a href="#macchiato">macchiato</a></li>
-                <li><a href="#frappe">Frappe</a></li>
-                <li><a href="#espresso">Espresso</a></li>
-                <li><a href="#icedcoffee">Iced Coffee</a></li>
-                <li><a href="#video">Coffee Video</a></li>
-            </ul>
-        </nav>
-        <header>
-            <div>
-                <h1>Welcome to the Coffee Shop!</h1>
-                <p>Your one-stop shop for all your coffee needs.</p>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Coffee Shop Homepage">
+    <link rel="stylesheet" href="one_page_website.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+            <li><a href="#cappucino">Cappucino</a></li>
+            <li><a href="#latte">Latte</a></li>
+            <li><a href="#macchiato">macchiato</a></li>
+            <li><a href="#frappe">Frappe</a></li>
+            <li><a href="#espresso">Espresso</a></li>
+            <li><a href="#icedcoffee">Iced Coffee</a></li>
+            <li><a href="#video">Coffee Video</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <h1>Welcome to the Coffee Shop!</h1>
+            <p>Your one-stop shop for all your coffee needs.</p>
+        </div>
+    </header>
+    <!--LIGHTBOX-->
+    <h2 style="text-align:center">Lightbox</h2>
+
+    <div class="row">
+        <div class="column">
+            <img src="images/cappucino.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor img-lb" alt="Cappucino">
+        </div>
+        <div class="column">
+            <img src="images/latte.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor img-lb" alt="latte">
+        </div>
+        <div class="column">
+            <img src="images/macchiato.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor img-lb" alt="macchiato">
+        </div>
+        <div class="column">
+            <img src="images/frappe.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor img-lb" alt="frappe">
+        </div>
+        <div class="column">
+            <img src="images/espresso.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor img-lb" alt="expresso">
+        </div>
+        <div class="column">
+            <img src="images/icedcoffee.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow cursor img-lb" alt="icedcoffee">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides img-container">
+                <div class="numbertext">1 / 6</div>
+                <img src="images/cappucino.jpg" id="img-wide" alt="cappucino">
             </div>
-        </header>
-        <!--COFFEE IMAGES-->
-        <section>
+
+            <div class="mySlides img-container">
+                <div class="numbertext">2 / 6</div>
+                <img src="images/latte.jpg" id="img-wide" alt="latte">
+            </div>
+
+            <div class="mySlides img-container">
+                <div class="numbertext">3 / 6</div>
+                <img src="images/macchiato.jpg" id="img-wide" alt="macchiato">
+            </div>
+
+            <div class="mySlides img-container">
+                <div class="numbertext">4 / 6</div>
+                <img src="images/frappe.jpg" id="img-wide" alt="frappe">
+            </div>
+
+            <div class="mySlides img-container">
+                <div class="numbertext">5 / 6</div>
+                <img src="images/espresso.jpg" id="img-wide" alt="espresso">
+            </div>
+
+            <div class="mySlides img-container">
+                <div class="numbertext">6 / 6</div>
+                <img src="images/icedcoffee.jpg" id="img-wide" alt="icedcoffee">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="demo cursor img-lb-inner" src="images/cappucino.jpg"  onclick="currentSlide(1)"
+                    alt="Cappucino">
+            </div>
+            <div class="column">
+                <img class="demo cursor img-lb-inner" src="images/latte.jpg"  onclick="currentSlide(2)"
+                    alt="Latte">
+            </div>
+            <div class="column">
+                <img class="demo cursor img-lb-inner" src="images/macchiato.jpg"  onclick="currentSlide(3)"
+                    alt="Macchiato">
+            </div>
+            <div class="column">
+                <img class="demo cursor img-lb-inner" src="images/frappe.jpg"  onclick="currentSlide(4)"
+                    alt="Frappe">
+            </div>
+             <div class="column">
+                <img class="demo cursor img-lb-inner" src="images/espresso.jpg"  onclick="currentSlide(4)"
+                    alt="Espresso">
+            </div>
+             <div class="column">
+                <img class="demo cursor img-lb-inner" src="images/icedcoffee.jpg"  onclick="currentSlide(4)"
+                    alt="Iced Coffee">
+            </div>
+        </div>
+    </div>
+    <!--COFFEE IMAGES-->
+    <section>
+        <div>
+            <h2>Choose your coffee</h2>
             <div>
-                <h2>Choose your coffee</h2>
-                <div>
-                    <!--CAPPUCCINO-->
-                    <div id="cappucino">
-                        <h3>Cappucino</h3>
-                        <img src="images/cappucino.jpg" alt="Picture of Cappucino">
-                    </div>
-                    <!--LATTE-->
-                    <div id="latte">
-                        <h3>Latte</h3>
-                        <img src="images/latte.jpg" alt="Picture of Latte">
-                    </div>
-                     <!--MACCHIATO-->
-                    <div id="macchiato">
-                        <h3>Macchiato</h3>
-                        <img src="images/macchiato.jpg" alt="Picture of Macchiato">
-                    </div>
-                     <!--FRAPPE-->
-                    <div id="frappe">
-                        <h3>Frappe</h3>
-                        <img src="images/frappe.jpg" alt="Picture of Frappe">
-                    </div>
-                     <!--ESPRESSO-->
-                    <div id="espresso">
-                        <h3>Espresso</h3>
-                        <img src="images/espresso.jpg" alt="Picture of Espresso">
-                    </div>
-                     <!--ICED COFFEE-->
-                    <div id="icedcoffee">
-                        <h3>Iced Coffee</h3>
-                        <img src="images/icedcoffee.jpg" alt="Picture of Iced Coffee">
-                    </div>
+                <!--CAPPUCCINO-->
+                <div id="cappucino">
+                    <h3>Cappucino</h3>
+                    <img src="images/cappucino.jpg" alt="Picture of Cappucino">
+                </div>
+                <!--LATTE-->
+                <div id="latte">
+                    <h3>Latte</h3>
+                    <img src="images/latte.jpg" alt="Picture of Latte">
+                </div>
+                <!--MACCHIATO-->
+                <div id="macchiato">
+                    <h3>Macchiato</h3>
+                    <img src="images/macchiato.jpg" alt="Picture of Macchiato">
+                </div>
+                <!--FRAPPE-->
+                <div id="frappe">
+                    <h3>Frappe</h3>
+                    <img src="images/frappe.jpg" alt="Picture of Frappe">
+                </div>
+                <!--ESPRESSO-->
+                <div id="espresso">
+                    <h3>Espresso</h3>
+                    <img src="images/espresso.jpg" alt="Picture of Espresso">
+                </div>
+                <!--ICED COFFEE-->
+                <div id="icedcoffee">
+                    <h3>Iced Coffee</h3>
+                    <img src="images/icedcoffee.jpg" alt="Picture of Iced Coffee">
                 </div>
             </div>
-        </section>
-        <!--FORM-->
-        <section>
+        </div>
+    </section>
+    <!--FORM-->
+    <section>
+        <div>
+            <h3>Please provide your contact information
+                and a brief message of your inquiry.
+            </h3>
             <div>
-                <h3>Please provide your contact information
-                    and a brief message of your inquiry.
-                </h3>
-                <div>
-                    <form>
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name"><br>
-                        <input type="email" placeholder="Email Address"><br>
-                        <input type="tel" placeholder="Phone Number"><br>
-                        <input type="checkbox" id="Newsletter">
-                        <label for="Newsletter">Would you like to recieve our monthly newsletter?</label><br>
-                        <textarea placeholder="Type message here..."></textarea><br>
-                        <input type="submit" value="Submit">
-                    </form>
-                </div>
+                <form>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name"><br>
+                    <input type="email" placeholder="Email Address"><br>
+                    <input type="tel" placeholder="Phone Number"><br>
+                    <input type="checkbox" id="Newsletter">
+                    <label for="Newsletter">Would you like to recieve our monthly newsletter?</label><br>
+                    <textarea placeholder="Type message here..."></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
-        </section>
-        <!--COFFEE VIDEO-->
-        <section>
-            <h2>Watch our Coffee Video</h2>
-            <p>Enjoy a relaxing video about the art of coffee making.</p>
-            <div id="video">
-                <h3>Coffee Video</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gvPetTPFsZM?si=xmP9Uz3DpaPQW9Qv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-         <!--FOOTER-->
-        <footer>
-            <table>
-                <tr>
-                    <td>
-                        <p>Coffee Shop! &copy;</p>
-                    </td>
-                    <td>
-                        <p>123 Cass Ave</p>
-                        <p>Detroit, MI 44204</p>
-                    </td>
-                    <td>
-                        <p>313-234-3966</p>
-                    </td>
-                </tr>
-            </table>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <!--COFFEE VIDEO-->
+    <section>
+        <h2>Watch our Coffee Video</h2>
+        <p>Enjoy a relaxing video about the art of coffee making.</p>
+        <div id="video">
+            <h3>Coffee Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gvPetTPFsZM?si=xmP9Uz3DpaPQW9Qv"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>Coffee Shop! &copy;</p>
+                </td>
+                <td>
+                    <p>123 Cass Ave</p>
+                    <p>Detroit, MI 44204</p>
+                </td>
+                <td>
+                    <p>313-234-3966</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+
+    <script src="JS/one_page_website.js" defer></script>
+</body>
+
 </html>
