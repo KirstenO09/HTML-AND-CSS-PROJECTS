@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Your Name Here</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascript.js" defer></script>
+</head>
+
+<!--Body-->
+
+<body class="Background">
+    <script>
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
+    </script>
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <!--Breaks inserted to add space between navbar and the first heading-->
+    <br>
+    <br>
+
+    <!--Background video-->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="images/video/coding1.mp4" type="video/mp4">
+            <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">My Portfolio</h1>
+        <strong>
+            <p class="center">
+                <q>Computer programming is an art, because it applies accumulated knowledge to the world,
+                    <br>because it requires skill and ingenuity, and especially because it produces objects of beauty.
+                </q>
+                <br> -Donald Kruth
+                <br>
+                <br> My name is Kirsten. Welcome to my portfolio website. On it, I will tell you about my background and
+                experience.
+                <br>
+                <br> Thank you for stopping by and enjoy!
+            </p>
+        </strong>
+    </div>
+
+    <!--SlideShow 1-->
+
+    
+        <!-- Slideshow section added -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background"> 
+                <div id="Slideshow_Container">
+                    <!-- Slide 1 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/Research_Data.jpg" alt="Picture of yourself">
+                        <div class="text">I am a Research Assistant in data analytics looking for more opportunities in the tech field!</div>
+                    </div>
+                    <!-- Slide 2 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <div class="text">I learned how to code in:<br>HTML, CSS, JavaScript,</div>
+                    </div>
+                    <!-- Slide 3 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/Python.png" alt="Python logo">
+                        <div class="text">I learned python, which is a popular programming language.</div>
+                    </div>
+                    <!-- Slide 4 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text"> I have experience with C#, .NET Framework, ASP.NET, MVC, </div>
+                    </div>
+                    <!-- Slide 5 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <div class="text"> I have experience in back end development, databases and SQL.</div>
+                    </div>
+                    <!-- Slide 6 of 6 -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/contact.jpg" alt="contact picture"> 
+                        <div class="text"><a class="white-text" onclick="openForm()">Contact me now!</a></div> 
+                    </div>
+                    <!-- Previous and next buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+            </div>
+        </div>
+
+    <!--About section-->
+    <div class="Row" id="About">
+        <!--Left column-->
+        <div class="Column_2 single-featured-image-header img">
+            <img src="images/wsu.jpeg" alt="Wayne State University" class="img-wsu">
+        </div>
+        <!--Right column-->
+        <div class="Column_1">
+            <h2>About</h2>
+            <p class="p-about">
+                I am a recent IT graduate from Wayne State University and currently a research assistant who loves to
+                code! As a research assistant I am working to build my skills in data
+                analytics where I have create python scripts, worked with RSTudio,BigQuery, Cloud Storage, and used
+                Google Cloud APIs, to complete task that consist of
+                data collection, management and cleaning.
+                <br>
+                <br>I am also a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                    Academy</a>’s Software Developer Boot Camp, and trained and experienced in the
+                following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
+                <br>
+                <br>I am always looking for new opportunities to learn and improve my technical skills. <a
+                    href="#Contact">Contact</a> me below!
+            </p>
+        </div>
+    </div>
+
+    <!--GitHub section-->
+    <div class="Row" id="GitHub">
+        <!--Left column-->
+        <div class="Column_1">
+            <h2>GitHub</h2>
+            <p class="center">
+                Click the links below to view my GitHub projects from the Tech Academy Software Developer Bootcamp!
+                <br>
+            <p class="center"><a href="https://github.com/KirstenO09/HTML-AND-CSS-PROJECTS.git" target="_blank">- My
+                    HTML & CSS Projects</a></p>
+
+            <p class="center"><a href="https://github.com/KirstenO09/JAVASCRIPT-PROJECTS.git" target="_blank">- My
+                    JavaScript Projects</a></p>
+            </p>
+            <p class="center">Learn more about the tech Academy Software Developer Boot Camp!</p>
+            <a href="https://www.learncodinganywhere.com/softwaredeveloperbootcampcontact" target="_blank"><img class="img-TA-logo move"
+                    src="images/TA_logo.png" alt="Tech Academy Logo"></a>
+        </div>
+        <!--Right column-->
+        <div class="Column_2">
+            <h2>View the Tech Academy Github</h2>
+            <a href="https://github.com/the-tech-academy" target="_blank"><img class="img-github"
+                    src="images/GitHub.png" alt="GitHub Logo"></a>
+        </div>
+    </div>
+
+    <!--Contact section-->
+    <div class="Row" id="Contact">
+        <!--Contact image, left column-->
+        <div class="Column_2">
+            <h2>Connect with me on LinkedIn!</h2>
+            <a href="www.linkedin.com/in/kirsten-osborne" target="_blank"><img class="img-linkedin"
+                    src="images/linkedIn.png" alt="LinkedIn-Logo"></a>
+        </div>
+        <!--Contact form, right column-->
+        <div class="Column_1">
+            <h2>Contact</h2>
+            <p class="p-contact">Please feel free to reach out to me via email: okirsten2@gmail.com,
+                <br>or by clicking the "Contact Me!" button below to open the contact form.
+                <br>I look forward to hearing from you!
+            </p>
+            <a href="mailto:okirsten2@gmail.com" target="_blank"><img src="images/gmail-icon.jpg" alt="Gmail Icon" class="img-gmail"></a>
+            <br>
+            <!-- A button to open the popup form -->
+            <button class="open-button" onclick="openForm()">Contact Me!</button>
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <!--This specifies where and how to send the form data; we are leaving it blank-->
+            <form name="myForm" action="/action_page.php" class="form-container" onsubmit="return validateForm()"
+                method="POST">
+                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <label>Name:</label>
+                <input type="text" placeholder="Please enter your name here" required>
+                <label>Email:</label>
+                <input type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="Please enter your phone number here (Format: 123-456-7890)">
+
+                <label>Message:</label>
+                <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                <input type="submit" class="btn" value="SUBMIT">
+                <button type="button" class="btn" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Slideshow 2-->
+    <div class="slideshow2-bg">
+        <h2 class="white-text h2-slideshow">Project Showcase: A Visual Tour of My Work!</h2>
+        <div id="slideshow">
+            <div>
+                <img src="images/AcademyCinemas.png" alt="Academy Cinemas 1" class="no-hover">
+            </div>
+            <div>
+                <img src="images/AcademyCinemas2.png" alt="Academy Cinemas 2" class="no-hover">
+            </div>
+            <div>
+                <img src="images/AcademyCinemas3.png" alt="Academy Cinemas 3" class="no-hover">
+            </div>
+            <div>
+                <img src="images/AcademyCinemas4.png" alt="Academy Cinemas 4" class="no-hover">
+            </div>
+            <div>
+                <img src="images/AcademyCinemas5.png" alt="Academy Cinemas 5" class="no-hover">
+            </div>
+            <div>
+                <img src="images/AcademyCinemas6.png" alt="Academy Cinemas 6" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SimpleRecipes.png" alt="Simple Recipes" class="no-hover">
+            </div>
+            <div>
+                <img src="images/PetShop.png" alt="Pet Shop" class="no-hover">
+            </div>
+            <div>
+                <img src="images/CoffeeLightbox.png" alt="Coffee Lightbox" class="no-hover">
+            </div>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <p class="p-footer center">
+            &copy; Prosper Consulting Inc.
+            <a href="https://www.learncodinganywhere.com/" target="_blank" class="footer-link">
+                The Tech Academy
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
