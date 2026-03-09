@@ -9,7 +9,7 @@ function closeForm() {
 
 // Form validation code
 function validateForm() {
-  let x = document.forms["myForm"]["fname"].value;
+  let x = document.forms["myForm"]["name"].value;
   if (x == "") {
     alert("Name must be filled out");
     return false;
@@ -29,6 +29,22 @@ function validateForm() {
     alert("Message must be filled out");
     return false;
   }
+  return true;
+}
+
+function handleSubmit(event) {
+  event.preventDefault(); // stop real submission
+
+  if (!validateForm()) {
+    return false;
+  }
+
+  alert("Thank you! Your message has been submitted.");
+  document.forms["myForm"].reset(); // clears inputs
+
+  closeForm();
+
+  return false;
 }
 
 // This function displays the first image in the slideshow when the page loads
@@ -62,15 +78,21 @@ function showSlides(n) {
 }
 
 //This is a fade in fade out slideshow code using jQuery
-// Slideshow code
-  $("#slideshow > div:gt(0)").hide();
+// Slideshow 2 code
+ $(document).ready(function () {
+    $(".slideshow").each(function () {
+        $(this).children("div:gt(0)").hide();
+    });
 
-  setInterval(function () {
-    $('#slideshow > div:first')
-      .fadeOut(1000)
-      .next()
-      .fadeIn(1000)
-      .end()
-      .appendTo('#slideshow');
-  }, 3000);
-
+    setInterval(function () {
+        $(".slideshow").each(function () {
+            $(this)
+                .children("div:first")
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo(this);
+        });
+    }, 3000);
+});

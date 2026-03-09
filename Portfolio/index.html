@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
-    <title>Your Name Here</title>
+    <title>Kirsten Osborne</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="javascript.js" defer></script>
@@ -68,35 +68,30 @@
         <div id="Slideshow">
             <div id="Slideshow_Background"> 
                 <div id="Slideshow_Container">
-                    <!-- Slide 1 of 6 -->
+                    <!-- Slide 1 of 5 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images no-hover slide-hover" src="images/Research_Data.jpg" alt="Picture of yourself">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/Slides/Research_Data.jpg" alt="Picture of yourself">
                         <div class="text">I am a Research Assistant in data analytics looking for more opportunities in the tech field!</div>
                     </div>
-                    <!-- Slide 2 of 6 -->
+                    <!-- Slide 2 of 5 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images no-hover slide-hover" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/Slides/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
                         <div class="text">I learned how to code in:<br>HTML, CSS, JavaScript,</div>
                     </div>
-                    <!-- Slide 3 of 6 -->
+                    <!-- Slide 3 of 5 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images no-hover slide-hover" src="images/Python.png" alt="Python logo">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/Slides/Python.png" alt="Python logo">
                         <div class="text">I learned python, which is a popular programming language.</div>
                     </div>
-                    <!-- Slide 4 of 6 -->
+                    <!-- Slide 4 of 5 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images no-hover slide-hover" src="images/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/Slides/C_Sharp_and_Dot_NET.png" alt="C# logo">
                         <div class="text"> I have experience with C#, .NET Framework, ASP.NET, MVC, </div>
                     </div>
-                    <!-- Slide 5 of 6 -->
+                    <!-- Slide 5 of 5 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images no-hover slide-hover" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
+                        <img class="Slideshow_Images no-hover slide-hover" src="images/Slides/SQL_and_Database.jpg" alt="SQL logo"> 
                         <div class="text"> I have experience in back end development, databases and SQL.</div>
-                    </div>
-                    <!-- Slide 6 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images no-hover slide-hover" src="images/contact.jpg" alt="contact picture"> 
-                        <div class="text"><a class="white-text" onclick="openForm()">Contact me now!</a></div> 
                     </div>
                     <!-- Previous and next buttons -->
                     <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
@@ -105,13 +100,12 @@
                 <br> <!-- Adds a space between the slideshow images and the dots -->
 
                 <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-                <div style="text-align: center">
+                <div class="dots-container">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
                     <span class="dot" onclick="currentSlide(3)"></span> 
                     <span class="dot" onclick="currentSlide(4)"></span> 
                     <span class="dot" onclick="currentSlide(5)"></span> 
-                    <span class="dot" onclick="currentSlide(6)"></span> 
                 </div>
             </div>
         </div>
@@ -132,7 +126,7 @@
                 Google Cloud APIs, to complete task that consist of
                 data collection, management and cleaning.
                 <br>
-                <br>I am also a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech
+                <br>I am also a graduate of <a href="https://www.learncodinganywhere.com" target="_blank" rel="noopener noreferrer">The Tech
                     Academy</a>’s Software Developer Boot Camp, and trained and experienced in the
                 following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more.
                 <br>
@@ -148,23 +142,38 @@
         <div class="Column_1">
             <h2>GitHub</h2>
             <p class="center">
-                Click the links below to view my GitHub projects from the Tech Academy Software Developer Bootcamp!
-                <br>
-            <p class="center"><a href="https://github.com/KirstenO09/HTML-AND-CSS-PROJECTS.git" target="_blank">- My
-                    HTML & CSS Projects</a></p>
-
-            <p class="center"><a href="https://github.com/KirstenO09/JAVASCRIPT-PROJECTS.git" target="_blank">- My
-                    JavaScript Projects</a></p>
+                Click the links below to view all of my GitHub projects from the Tech Academy Software Developer Bootcamp!
             </p>
-            <p class="center">Learn more about the tech Academy Software Developer Boot Camp!</p>
-            <a href="https://www.learncodinganywhere.com/softwaredeveloperbootcampcontact" target="_blank"><img class="img-TA-logo move"
-                    src="images/TA_logo.png" alt="Tech Academy Logo"></a>
+             <!-- Two column link container -->
+            <div class="github-links">
+                <p class="center"><a href="https://github.com/KirstenO09/HTML-AND-CSS-PROJECTS.git" target="_blank" rel="noopener noreferrer">
+                    - My HTML & CSS Projects</a></p>
+
+                <p class="center"><a href="https://github.com/KirstenO09/JAVASCRIPT-PROJECTS.git" target="_blank" rel="noopener noreferrer">
+                    - My JavaScript Projects</a></p>
+
+                <p class="center"><a href="https://github.com/KirstenO09/DATABASE-SQL-PROJECTS.git" target="_blank" rel="noopener noreferrer">
+                    - My Database & SQL Projects</a></p>
+
+                <p class="center"><a href="https://github.com/KirstenO09/PYTHON-PROJECTS.git" target="_blank" rel="noopener noreferrer">
+                    - My Python Projects</a></p>
+
+                <p class="center"><a href="https://github.com/KirstenO09/Python-Capstone.git" target="_blank" rel="noopener noreferrer">
+                    - My Python Capstone Project</a></p>
+
+                <p class="center"><a href="https://github.com/KirstenO09/The-Tech-Academy-Basic-C-Sharp-Projects.git" target="_blank" rel="noopener noreferrer">
+                    - My C# &.NET Projects</a></p>
+                </p>
+            </div>
+            <p class="center fix-margin">Learn more about the tech Academy Software Developer Boot Camp!</p>
+            <a href="https://www.learncodinganywhere.com/softwaredeveloperbootcampcontact" target="_blank" rel="noopener noreferrer"><img class="img-TA-logo move"
+                    src="images/Logos/TA_logo.png" alt="Tech Academy Logo"></a>
         </div>
         <!--Right column-->
         <div class="Column_2">
             <h2>View the Tech Academy Github</h2>
-            <a href="https://github.com/the-tech-academy" target="_blank"><img class="img-github"
-                    src="images/GitHub.png" alt="GitHub Logo"></a>
+            <a href="https://github.com/the-tech-academy" target="_blank" rel="noopener noreferrer"><img class="img-github"
+                    src="images/Logos/GitHub.png" alt="GitHub Logo"></a>
         </div>
     </div>
 
@@ -173,8 +182,8 @@
         <!--Contact image, left column-->
         <div class="Column_2">
             <h2>Connect with me on LinkedIn!</h2>
-            <a href="www.linkedin.com/in/kirsten-osborne" target="_blank"><img class="img-linkedin"
-                    src="images/linkedIn.png" alt="LinkedIn-Logo"></a>
+            <a href="www.linkedin.com/in/kirsten-osborne" target="_blank" rel="noopener noreferrer"><img class="img-linkedin"
+                    src="images/Logos/linkedIn.png" alt="LinkedIn-Logo"></a>
         </div>
         <!--Contact form, right column-->
         <div class="Column_1">
@@ -183,7 +192,7 @@
                 <br>or by clicking the "Contact Me!" button below to open the contact form.
                 <br>I look forward to hearing from you!
             </p>
-            <a href="mailto:okirsten2@gmail.com" target="_blank"><img src="images/gmail-icon.jpg" alt="Gmail Icon" class="img-gmail"></a>
+            <a href="mailto:okirsten2@gmail.com" target="_blank" rel="noopener noreferrer"><img src="images/Logos/gmail-icon.jpg" alt="Gmail Icon" class="img-gmail"></a>
             <br>
             <!-- A button to open the popup form -->
             <button class="open-button" onclick="openForm()">Contact Me!</button>
@@ -191,11 +200,11 @@
 
         <div class="form-popup" id="myForm">
             <!--This specifies where and how to send the form data; we are leaving it blank-->
-            <form name="myForm" action="/action_page.php" class="form-container" onsubmit="return validateForm()"
+            <form name="myForm" class="form-container" onsubmit="return handleSubmit(event)"
                 method="POST">
                 <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
                 <label>Name:</label>
-                <input type="text" placeholder="Please enter your name here" required>
+                <input type="text" id="name" name="name" placeholder="Please enter your name here" required>
                 <label>Email:</label>
                 <input type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
 
@@ -213,25 +222,25 @@
 
     <!--Slideshow 2-->
     <div class="slideshow2-bg">
-        <h2 class="white-text h2-slideshow">Project Showcase: A Visual Tour of My Work!</h2>
-        <div id="slideshow">
+        <h2 class="white-text h2-slideshow">A Visual Tour of My HTML/CSS Work!</h2>
+        <div class="slideshow">
             <div>
-                <img src="images/AcademyCinemas.png" alt="Academy Cinemas 1" class="no-hover">
+                <img src="images/AcademyCinemas/AcademyCinemas1.png" alt="Academy Cinemas 1" class="no-hover">
             </div>
             <div>
-                <img src="images/AcademyCinemas2.png" alt="Academy Cinemas 2" class="no-hover">
+                <img src="images/AcademyCinemas/AcademyCinemas2.png" alt="Academy Cinemas 2" class="no-hover">
             </div>
             <div>
-                <img src="images/AcademyCinemas3.png" alt="Academy Cinemas 3" class="no-hover">
+                <img src="images/AcademyCinemas/AcademyCinemas3.png" alt="Academy Cinemas 3" class="no-hover">
             </div>
             <div>
-                <img src="images/AcademyCinemas4.png" alt="Academy Cinemas 4" class="no-hover">
+                <img src="images/AcademyCinemas/AcademyCinemas4.png" alt="Academy Cinemas 4" class="no-hover">
             </div>
             <div>
-                <img src="images/AcademyCinemas5.png" alt="Academy Cinemas 5" class="no-hover">
+                <img src="images/AcademyCinemas/AcademyCinemas5.png" alt="Academy Cinemas 5" class="no-hover">
             </div>
             <div>
-                <img src="images/AcademyCinemas6.png" alt="Academy Cinemas 6" class="no-hover">
+                <img src="images/AcademyCinemas/AcademyCinemas6.png" alt="Academy Cinemas 6" class="no-hover">
             </div>
             <div>
                 <img src="images/SimpleRecipes.png" alt="Simple Recipes" class="no-hover">
@@ -245,11 +254,55 @@
         </div>
     </div>
 
+    <!--Slideshow 3-->
+    <div class="slideshow3-bg">
+        <h2 class="white-text h2-slideshow">A Visual Tour of My Python Capstone Work!</h2>
+        <div class="slideshow">
+            <div>
+                <img src="images/SalonBooking/Home1.png" alt="Home 1" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/Home2.png" alt="Home 2" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/HairDetails.png" alt="Hair Details" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/Appointment.png" alt="Appointment" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/ViewBookings.png" alt="View Bookings" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/EditBooking.png" alt="Edit Booking" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/DeleteBooking.png" alt="Delete Booking" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/Gallery.png" alt="Gallery" class="no-hover">
+            </div>
+            <div>
+                <img src="images/SalonBooking/HairCareTips.png" alt="Hair Care Tips" class="no-hover">
+            </div>                        
+        </div>
+    </div>
+
+    <div class="demo-bg">
+        <h2 class="white-text h2-slideshow">A Demo of my JavaScript Tic-Tac-Toe Game!</h2>
+        <div class="demo">
+            <video controls width="800">
+                <source src="images/video/TicTacToe.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+        </body>
+
     <!--Footer section-->
     <footer>
         <p class="p-footer center">
             &copy; Prosper Consulting Inc.
-            <a href="https://www.learncodinganywhere.com/" target="_blank" class="footer-link">
+            <a href="https://www.learncodinganywhere.com/" target="_blank" rel="noopener noreferrer" class="footer-link">
                 The Tech Academy
             </a>
         </p>

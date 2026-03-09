@@ -173,7 +173,7 @@ img {
     margin-left: auto;
     /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
-    margin-top: 4.3%;
+    margin-top: 6.5%;
 }
 
 .img-github {
@@ -187,6 +187,7 @@ img {
     /* Sets the height of all images */
     display: block;
     /* By specifying block display we can ensure our images are able to be centered */
+    margin-top: 7%;
     margin-left: auto;
     /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
@@ -203,6 +204,7 @@ img {
     /* Sets the height of all images */
     display: block;
     /* By specifying block display we can ensure our images are able to be centered */
+    margin-top: 6.5%;
     margin-left: auto;
     /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
@@ -219,6 +221,7 @@ img {
     /* Sets the height of all images */
     display: block;
     /* By specifying block display we can ensure our images are able to be centered */
+    margin-top: 6.5%;
     margin-left: auto;
     /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
@@ -459,7 +462,7 @@ footer {
     padding: 10px;
     padding-top: 2%;
     /* This ensures there is space between the top of the column and our headings */
-    height: 460px;
+    height: 500px;
     /* This sets the height of the column to 460px -  this may need to be adjusted depending on the text you enter */
     background-color: #edf5f7;
     /* Sets the background color of the columns with class Column_1 */
@@ -472,12 +475,51 @@ footer {
     }
 }
 
+.github-links{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 6px;
+    margin-top: 0px;        /* remove extra margin */
+    
+}
+
+.github-links a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    margin-top: -20px;        /* remove extra margin */
+    margin-bottom: -20px;
+    margin-left: 14%;
+    line-height: 1.2; /* reduces vertical spacing */
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    transition: all 0.2s ease;
+    justify-self: start;   /* stops stretching */
+    width: 70%;           /* prevents full width */
+}
+
+/* Hover effect */
+.github-links a:hover{
+    background-color: #e6f0ff;
+    border-color: #4a90e2;
+    transform: translateY(-2px);
+}
+
+.fix-margin{
+    margin-top: -30px; /* remove extra margin */
+    margin-bottom: 10px;
+}
+
 .Column_2 {
     float: left;
     width: 50%;
     padding: 10px;
     padding-top: 2%;
-    height: 460px;
+    height: 500px;
     background-color: #b7cad3;
 }
 
@@ -657,13 +699,12 @@ form {
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover,
-{
-opacity: 1;
-transform: scale(1.01);
-/* Makes the button increase 1.1 times in size */
-transition: transform 1.3s;
-/* Makes the transform effect last 1.3 seconds */
+.form-container .btn:hover {
+    opacity: 1;
+    transform: scale(1.01);
+    /* Makes the button increase 1.1 times in size */
+    transition: transform 1.3s;
+    /* Makes the transform effect last 1.3 seconds */
 }
 
 /* Hover effect for contact and submit buttons */
@@ -798,6 +839,8 @@ transition: transform 1.3s;
     font-size: 1.5vw;
     border-radius: 0 3px 3px 0;
     /* Adds a slightly rounded border on the top and bottom right corners */
+    -webkit-user-select: none;
+    /* For Safari 3+ and Safari on iOS 3+ */
     user-select: none;
     /* This property makes it so that the user cannot highlight the text */
     transition: 0.6s ease;
@@ -865,6 +908,12 @@ transition: transform 1.3s;
     z-index: 1;
     /* This ensures the dots will be displayed above any other elements */
 }
+.dots-container {
+    text-align: center;
+    /* This centers the dots container */
+    padding-top: 10px;
+    /* This adds a small padding to the top of the dots container */
+}
 
 /* Hover effect for slideshow dots */
 .active,
@@ -875,13 +924,12 @@ transition: transform 1.3s;
 
 /* Fading animation for slideshow */
 .fade {
-    animation-name: fade;
-    /* Fade animation is defined below */
-    animation-duration: 1.5s;
-    /* The animation lasts 1.5 seconds */
-    -webkit-animation-name: fade;
     /* Same as above for Safari 4.0-8.0 */
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    /* Fade animation is defined below */
+    animation-name: fade;
+    /* The animation lasts 1.5 seconds */
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
@@ -914,38 +962,81 @@ transition: transform 1.3s;
 
 /***** SLIDESHOW 2 *****/
 /* The slideshow 2 container */
-#slideshow {
+.slideshow {
     margin: auto;
     position: relative;
     width: 80%;
-    height: 620px;
-    box-shadow: 0 0 20px rgba(216, 213, 213, 0.8);
-    background-color: #b7cad3;
-    border-radius: 8px;
-
+    max-width: 900px;
+    height: 500px; /* adjust to your image height */
+    overflow: hidden; 
 }
 
 /* This positions all divs within the slideshow on top of each other */
-#slideshow>div {
+.slideshow>div {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#slideshow img {
-    width: 1000px;
-    height: 550px;
-    object-fit: cover;
-    margin-top: 2.2%;
+.slideshow img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain; /* or cover if you want it to fill more */
+    display: block;
 }
 
 .slideshow2-bg {
     width: 100%;
-    height: 800px;
+    height: 700px;
     padding: 10px;
     padding-top: 3%;
     padding-bottom: 3%;
     background-color: #0e354b;
 }
+
+.slideshow3-bg {
+    width: 100%;
+    height: 700px;
+    padding: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #9ac3d3;
+}
+/***** End SLIDESHOW 2 Styling *****/
+
+/***** TicTacToe Demo *****/
+
+.demo {
+    margin: auto;
+    position: relative;
+    width: 60%;
+    max-width: 900px;
+    height: 500px; /* adjust to your image height */
+    overflow: hidden; 
+}
+
+/* This positions all divs within the slideshow on top of each other */
+.demo>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.demo video {
+    width: 60%;     /* shrink size */
+    height: auto;   /* keeps aspect ratio */
+    display: block;
+    margin: auto;
+}
+
+.demo-bg {
+    width: 100%;
+    height: 700px;
+    padding: 10px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #81c0a0;
+}
+
